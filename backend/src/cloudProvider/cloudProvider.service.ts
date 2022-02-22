@@ -12,7 +12,6 @@ export class CloudProviderService {
   ) {}
 
   async getCloudProviders(): Promise<CloudProvider[]> {
-    console.log('plop');
     return await this.cloudProviderRepository.find();
   }
 
